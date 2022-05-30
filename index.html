@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML5 Canvas烟花动画 随机色彩、高度和角度DEMO演示</title>
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css">
+
+</head>
+
+<body>
+
+	<div class="demo"></div>
+
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fireworks.js"></script>
+	<script type="text/javascript">
+		$('.demo').fireworks({
+			sound: false, // sound effect
+			opacity: 0.9,
+			width: '100%',
+			height: '100%'
+		});
+		let audio = document.getElementById("audio")
+		document.addEventListener("WeixinJSBridgeReady", function () {
+			audio.play();
+		}, false);
+	</script>
+	<div class="context">
+		陈圆圆 <br>生日快乐呦
+	</div>
+	<audio controls autoplay id="audio">
+		<source src="5608_0659_0452_ab230d07b013625f871038ec22dedaa6.mp3">
+	</audio>
+</body>
+
+</html>
