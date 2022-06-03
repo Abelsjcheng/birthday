@@ -25,10 +25,11 @@ function canvasApp() {
 
     var canvasElement = document.getElementById('fullstarbg');
     var cxt = canvasElement.getContext("2d");
-    var windowW = document.documentElement.clientWidth;
-    var windowh = document.documentElement.clientHeight;
+    var windowW = window.screen.width;
+    var windowh = window.screen.height;
     canvasElement.width = windowW;
     canvasElement.height = windowh;
+
     // 画烟花
     let particles = [];
     let disableAutoFireworks = false;
