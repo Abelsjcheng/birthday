@@ -29,7 +29,7 @@ function canvasApp() {
     var windowh = window.screen.height;
     canvasElement.width = windowW;
     canvasElement.height = windowh;
-
+    
     // 画烟花
     let particles = [];
     let disableAutoFireworks = false;
