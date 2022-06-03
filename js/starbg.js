@@ -14,10 +14,10 @@ function canvasApp() {
         return;
     }
     // fun options!
-    const PARTICLES_PER_FIREWORK = 150; // 100 - 400 or try 1000
+    const PARTICLES_PER_FIREWORK = 300; // 100 - 400 or try 1000
     const FIREWORK_CHANCE = 0.02; // percentage, set to 0 and click instead
     const BASE_PARTICLE_SPEED = 0.6; // between 0-4, controls the size of the overall fireworks
-    const FIREWORK_LIFESPAN = 600; // ms
+    const FIREWORK_LIFESPAN = 300; // ms
     const PARTICLE_INITIAL_SPEED = 4.5; // 2-8
 
     // not so fun options =\
@@ -25,11 +25,10 @@ function canvasApp() {
 
     var canvasElement = document.getElementById('fullstarbg');
     var cxt = canvasElement.getContext("2d");
-    var windowW = window.innerWidth;
-    var windowh = window.innerHeight;
+    var windowW = document.documentElement.clientWidth;
+    var windowh = document.documentElement.clientHeight;
     canvasElement.width = windowW;
     canvasElement.height = windowh;
-
     // 画烟花
     let particles = [];
     let disableAutoFireworks = false;
