@@ -40,6 +40,32 @@
 			left: 0;
 			top: 50%;
 		}
+
+		.cloud {
+			position: fixed;
+			left: 80px;
+			height: 100px;
+			width: 120px;
+			top: 46%;
+			background: url('cloud.png') no-repeat;
+			background-size: 120px auto;
+			text-align: center;
+		}
+
+		.cloudText {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: 0 auto;
+			height: 100px;
+			width: 100px;
+			text-align: center;
+			color: #000;
+			font-size: 1.0em;
+			transform: translateY(20px);
+		}
 	</style>
 
 </head>
@@ -47,6 +73,10 @@
 <body>
 	<canvas id="fullstarbg"></canvas>
 	<div class="content">
+		<div class="cloud">
+			<div class="cloudText">快看流星来啦，<br/>许个愿吧~</div>
+		</div>
+
 		<img src="rabit.png" class="rabitBg" />
 
 	</div>

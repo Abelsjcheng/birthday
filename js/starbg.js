@@ -132,7 +132,7 @@ function canvasApp() {
             this.currentDuration = (new Date()).getTime() - this.startTime;
 
             // initial speed kick
-            if (this.currentDuration <= 200) {
+            if (this.currentDuration <= 100) {
 
                 this.x += this.initialVelocityX * PARTICLE_INITIAL_SPEED;
                 this.y += this.initialVelocityY * PARTICLE_INITIAL_SPEED;
