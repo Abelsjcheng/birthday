@@ -101,10 +101,22 @@
 			</div>
 		</div>
 	</div>
-	<audio controls autoplay>
+	<audio id="music" preload autoplay loop controls>
 		<source src="music.mp3">
 	</audio>
 	<script>
+		window.onload = function () {
+			setInterval("toggleSound()", 1);
+		}
+
+		function toggleSound() {
+			var music = document.getElementById("music");//获取ID  
+			if (music.paused) { //判读是否播放  
+				music.paused = false;
+				music.play(); //没有就播放 
+			}
+		}
+
 		$(".input_cover").mousedown(function () {
 			$(this).hide();
 			$(this).siblings("input").addClass("cur");
