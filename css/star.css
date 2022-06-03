@@ -3,7 +3,7 @@ span {
 }
 
 .container {
-    width: 800px;
+    width: 950px;
     height: 420px;
     padding: 10px;
     position: absolute;
@@ -14,12 +14,11 @@ span {
     width: 738px;
     margin: 0 auto;
     padding-top: 30px;
-    position: relative;
 }
 
 .balloon>div {
-    width: 104px;
-    height: 140px;
+    width: 83px;
+    height: 112px;
     background: rgba(182, 15, 97, 0.9);
     border-radius: 0;
     border-radius: 80% 80% 80% 80%;
@@ -151,7 +150,7 @@ span {
 }
 
 span {
-    font-size: 4.8em;
+    font-size: 4.0em;
     color: white;
     position: relative;
     top: 30px;
