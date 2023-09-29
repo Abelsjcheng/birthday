@@ -1,6 +1,3 @@
-/**
- * Created by Zcy on 2016/11/1 0001.
- */
 
 window.addEventListener('load', windowload, false)
 function windowload() {
@@ -342,10 +339,5 @@ function canvasApp() {
         cxt.fill();
         cxt.closePath();
     }
-    //代码思路：
-    //星星 随机产生一定数量的星星对象{初始位置:x,y;星星半径}
-    //星星闪烁与运动的原理 每隔一定秒数重新绘制 并且移动位置 与 改变透明度  闪烁与移动可以随机或者一定的规律
-    //
-    //流线  同流星原理类似  斜线根据角度与第一点 求第二点
 
 }
