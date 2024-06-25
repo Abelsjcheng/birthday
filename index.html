@@ -107,7 +107,10 @@
 		<source src="birthday.mp3">
 	</audio>
 	<script>
-
+		const a = document.getElementById('birthday')
+		document.addEventListener('click', () => {
+			a.play()
+		})
 		document.getElementsByTagName("body")[0].onclick=function(){
 			toggleSound()
 		}
