@@ -103,14 +103,10 @@
 	<!-- <audio id="music" autoplay loop controls>
 		<source src="music.mp3">
 	</audio> -->
-	<audio id="birthday" autoplay loop controls>
+	<audio id="music" autoplay loop controls>
 		<source src="birthday.mp3">
 	</audio>
 	<script>
-		const a = document.getElementById('birthday')
-		document.addEventListener('click', () => {
-			a.play()
-		})
 		document.getElementsByTagName("body")[0].onclick=function(){
 			toggleSound()
 		}
